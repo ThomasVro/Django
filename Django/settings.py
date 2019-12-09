@@ -80,6 +80,20 @@ DATABASES = {
         'HOST': 'mongodb://admin:admin@devincimdb1027.westeurope.cloudapp.azure.com:30000/cloud_app',
         'USER':'admin',
         'PASSWORD':'admin',
+    },
+    'analyst': {
+        'ENGINE': 'djongo',
+        'NAME': 'cloud_app',
+        'HOST': 'mongodb://analyst:analyst@devincimdb1027.westeurope.cloudapp.azure.com:30000/cloud_app',
+        'USER':'analyst',
+        'PASSWORD':'analyst',
+    },
+    'user': {
+        'ENGINE': 'djongo',
+        'NAME': 'cloud_app',
+        'HOST': 'mongodb://user:user@devincimdb1027.westeurope.cloudapp.azure.com:30000/cloud_app',
+        'USER':'user',
+        'PASSWORD':'user',
     }
 }
 
