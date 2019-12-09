@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'App'
 ]
 
 MIDDLEWARE = [
@@ -74,7 +75,8 @@ WSGI_APPLICATION = 'Django.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default':{},
+    'admin': {
         'ENGINE': 'djongo',
         'NAME': 'cloud_app',
         'HOST': 'mongodb://admin:admin@devincimdb1027.westeurope.cloudapp.azure.com:30000/cloud_app',
