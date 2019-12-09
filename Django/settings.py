@@ -75,8 +75,11 @@ WSGI_APPLICATION = 'Django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME': 'cloud_app',
+        'HOST': 'mongodb://admin:admin@devincimdb1027.westeurope.cloudapp.azure.com:30000/cloud_app',
+        'USER':'admin',
+        'PASSWORD':'admin',
     }
 }
 
